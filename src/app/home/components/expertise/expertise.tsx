@@ -6,22 +6,21 @@ import CodeEditorCard, {
   StringLiteral,
   Variable,
 } from '@/app/home/components/expertise/components/code-editor-card'
+import GridOutline from '@/components/ui/grid-outline'
 
 export function Expertise() {
   return (
     <section>
-      <ContentContainerNew className="mt-10 md:mt-16">
+      <ContentContainerNew className="pt-10 md:pt-16">
         <SectionHeading>You&apos;ll catch me doing a combo of these things</SectionHeading>
-        <div className="py-10 md:py-16">
-          <div className="flex flex-col gap-5 border-y border-stone-200 dark:border-stone-800 md:flex-row">
-            <CodeEditorCard sampleLabel="MobileDevelopment.kt">
-              <MobileDevelopmentSample />
-            </CodeEditorCard>
-            <CodeEditorCard sampleLabel="web-development.ts">
-              <WebDevelopmentSample />
-            </CodeEditorCard>
-          </div>
-        </div>
+        <GridOutline className="my-10 flex flex-col gap-5 md:my-16 md:flex-row" direction="vertical">
+          <CodeEditorCard sampleLabel="MobileDevelopment.kt">
+            <MobileDevelopmentSample />
+          </CodeEditorCard>
+          <CodeEditorCard sampleLabel="web-development.ts">
+            <WebDevelopmentSample />
+          </CodeEditorCard>
+        </GridOutline>
       </ContentContainerNew>
     </section>
   )

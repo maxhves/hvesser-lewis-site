@@ -1,11 +1,12 @@
 import { ReactNode } from 'react'
 import { clsx } from 'clsx'
 import { jetBrainsMono } from '@/app/fonts/fonts'
+import GridOutline from '@/components/ui/grid-outline'
 
 export default function CodeEditorCard({ sampleLabel, children }: { sampleLabel: string; children: ReactNode }) {
   return (
-    <div className="-m-px flex-1 border border-stone-200 dark:border-stone-800">
-      <div className="-m-px flex flex-col overflow-clip rounded-2xl border border-stone-200 bg-white dark:border-stone-800 dark:bg-stone-900">
+    <GridOutline className="w-full">
+      <div className="flex flex-col overflow-clip rounded-2xl border border-stone-200 bg-white dark:border-stone-800 dark:bg-stone-900">
         {/* Tab */}
         <div className="w-full border-b border-stone-200 bg-stone-50 dark:border-stone-800 dark:bg-stone-950/50">
           <div className="w-[calc(50%+1px)] border-e border-stone-200 bg-white px-6 py-3 dark:border-stone-800 dark:bg-stone-900 md:w-fit">
@@ -38,7 +39,7 @@ export default function CodeEditorCard({ sampleLabel, children }: { sampleLabel:
           </div>
         </div>
       </div>
-    </div>
+    </GridOutline>
   )
 }
 
