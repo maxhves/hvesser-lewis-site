@@ -2,6 +2,7 @@ import React from 'react'
 import { ContentContainerNew } from '@/components/ui/content-container'
 import { IconBrandGithub, IconBrandLinkedin, IconClipboardText, IconMail } from '@tabler/icons-react'
 import { Link } from '@/components/ui/link'
+import GridOutline from '@/components/ui/grid-outline'
 
 //region Social Links
 
@@ -34,10 +35,13 @@ export default function Footer() {
   return (
     <footer className="border-t border-stone-200 dark:border-stone-800">
       <ContentContainerNew className="py-8">
-        <div className="flex flex-col items-center justify-normal gap-5 border-y border-stone-200 dark:border-stone-800 md:flex-row md:justify-between">
+        <GridOutline
+          className="flex flex-col items-center justify-normal gap-5 md:flex-row md:justify-between"
+          direction="vertical"
+        >
           <Name />
           <SocialLinks />
-        </div>
+        </GridOutline>
       </ContentContainerNew>
     </footer>
   )
@@ -47,11 +51,9 @@ export default function Footer() {
 
 function Name() {
   return (
-    <div className="mx-5 flex w-full justify-center border-b border-stone-200 dark:border-stone-800 md:w-fit md:border-none">
-      <div className="flex h-8 items-center border-x border-stone-200 text-sm text-stone-500 dark:border-stone-800">
-        Maximilian Hvesser-Lewis
-      </div>
-    </div>
+    <GridOutline className="mx-5 flex w-full justify-center md:w-fit">
+      <GridOutline className="flex h-8 items-center text-sm text-stone-500">Maximilian Hvesser-Lewis</GridOutline>
+    </GridOutline>
   )
 }
 
@@ -61,8 +63,8 @@ function Name() {
 
 function SocialLinks() {
   return (
-    <div className="mx-5 flex w-full justify-center border-t border-stone-200 dark:border-stone-800 md:w-fit md:border-none">
-      <div className="flex w-fit items-center gap-1 border-x border-stone-200 dark:border-stone-800">
+    <GridOutline className="mx-5 flex w-full justify-center md:w-fit">
+      <GridOutline className="flex w-fit items-center gap-1">
         {socialLinks.map((link) => (
           <Link
             className="flex h-8 items-center gap-1 px-3 text-sm text-stone-500 hover:text-stone-700 dark:hover:text-stone-300"
@@ -75,8 +77,8 @@ function SocialLinks() {
             <span className="hidden md:flex">{link.label}</span>
           </Link>
         ))}
-      </div>
-    </div>
+      </GridOutline>
+    </GridOutline>
   )
 }
 
