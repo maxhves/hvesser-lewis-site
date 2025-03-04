@@ -44,7 +44,7 @@ function DescriptionLabel({ children }: { children: React.ReactNode }) {
 
 function GoBackHomeButton({ children }: { children: React.ReactNode }) {
   return (
-    <Button className="mt-8" accent={true} href="/">
+    <Button className="mt-8" href="/">
       <ArrowLeftLongIcon />
       {children}
     </Button>
