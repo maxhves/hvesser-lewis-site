@@ -10,7 +10,7 @@ import CodeEditorCard, {
 export function Expertise() {
   return (
     <section>
-      <ContentContainerNew className="pt-16">
+      <ContentContainerNew className="mt-10 md:mt-16">
         <SectionHeading>You&apos;ll catch me doing a combo of these things</SectionHeading>
         <div className="py-10 md:py-16">
           <div className="flex flex-col gap-5 border-y border-stone-200 dark:border-stone-800 md:flex-row">

@@ -6,7 +6,7 @@ import { HomeNavigationButton } from '@/app/home/components/navigation/home-navi
 const navigationLinks = [
   {
     label: 'About',
-    href: '/#about',
+    href: '/',
   },
   {
     label: 'Expertise',
