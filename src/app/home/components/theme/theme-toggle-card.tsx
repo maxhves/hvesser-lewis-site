@@ -5,6 +5,7 @@ import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
 import { IconMoonFilled, IconSunFilled } from '@tabler/icons-react'
 import { clsx } from 'clsx'
+import GridOutline from '@/components/ui/grid-outline'
 
 export function ThemeToggleCard() {
   const [mounted, setMounted] = useState(false)
@@ -19,8 +20,8 @@ export function ThemeToggleCard() {
   }
 
   return (
-    <div className="border-s-0 border-t border-stone-200 dark:border-stone-800 md:border-s md:border-t-0">
-      <div className="-m-px flex h-64 items-center justify-center rounded-2xl border border-stone-200 bg-white dark:border-stone-800 dark:bg-stone-900 md:w-64">
+    <GridOutline>
+      <div className="flex h-64 items-center justify-center rounded-2xl border border-stone-200 bg-white dark:border-stone-800 dark:bg-stone-900 md:w-64">
         <div className="rounded-full border border-stone-200 bg-white p-2 dark:border-stone-800 dark:bg-stone-950">
           <div className="rounded-full bg-stone-200 p-1 dark:bg-stone-800">
             <Switch
@@ -49,6 +50,6 @@ export function ThemeToggleCard() {
           </div>
         </div>
       </div>
-    </div>
+    </GridOutline>
   )
 }

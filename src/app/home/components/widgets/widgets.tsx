@@ -1,14 +1,15 @@
 import CurrentLocationCard from '@/app/home/components/location/current-location-card'
 import { ThemeToggleCard } from '@/app/home/components/theme/theme-toggle-card'
 import { ContentContainerNew } from '@/components/ui/content-container'
+import GridOutline from '@/components/ui/grid-outline'
 
 export default function Widgets() {
   return (
     <ContentContainerNew>
-      <div className="flex flex-col gap-5 border-y border-stone-200 dark:border-stone-800 md:flex-row">
+      <GridOutline className="flex flex-col gap-5 md:flex-row" direction="vertical">
         <CurrentLocationCard />
         <ThemeToggleCard />
-      </div>
+      </GridOutline>
     </ContentContainerNew>
   )
 }
