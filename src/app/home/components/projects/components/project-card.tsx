@@ -1,3 +1,4 @@
+import { ElementType } from 'react'
 import { dmSans } from '@/app/fonts/fonts'
 import { clsx } from 'clsx'
 import { Link } from '@/components/ui/link'
@@ -8,11 +9,15 @@ export default function ProjectCard({
   title,
   description,
   href,
+  imagePreview,
 }: {
   title: string
   description: string
   href: string
+  imagePreview: ElementType
 }) {
+  const ImagePreview = imagePreview
+
   return (
     <GridOutline className="flex flex-col gap-5 md:flex-row">
       {/* Project Information */}
@@ -47,31 +52,10 @@ export default function ProjectCard({
 
       {/* Project Preview Image */}
       <GridOutline className="w-full md:w-3/5">
-        <div className="h-80 border border-stone-200 bg-stone-50 p-2 dark:border-stone-800 dark:bg-stone-900/50 md:h-full">
-          <ImageTesting />
+        <div className="h-72 border border-stone-200 bg-stone-50 p-2 dark:border-stone-800 dark:bg-stone-900/50 md:h-full">
+          <ImagePreview />
         </div>
       </GridOutline>
     </GridOutline>
   )
 }
-
-//region Image testing
-
-import desktopPreview from '../../../../../../public/images/find-the-menu-preview-desktop.webp'
-import mobilePreview from '../../../../../../public/images/find-the-menu-preview-mobile.webp'
-import Image from 'next/image'
-
-function ImageTesting() {
-  return (
-    <div className="group relative h-full w-full border border-stone-200 opacity-100 dark:border-stone-800 dark:opacity-90">
-      <div className="absolute inset-y-0 left-0 top-0 h-full w-full">
-        <Image className="object-cover object-top" src={desktopPreview} alt="Desktop preview" fill={true} />
-      </div>
-      <div className="absolute inset-y-0 right-0 top-0 h-full w-72 border-s border-stone-200">
-        <Image className="object-cover object-top" src={mobilePreview} alt="Desktop preview" fill={true} />
-      </div>
-    </div>
-  )
-}
-
-//endregion

@@ -10,7 +10,13 @@ export default function Projects() {
         <SectionHeading>A number of projects have kept me busy recently</SectionHeading>
         <ol className="space-y-5 py-10 md:py-16">
           {projectData.map((project) => (
-            <ProjectCard key={project.id} title={project.title} description={project.description} href={project.href} />
+            <ProjectCard
+              key={project.id}
+              title={project.title}
+              description={project.description}
+              href={project.href}
+              imagePreview={project.imagePreview}
+            />
           ))}
         </ol>
       </ContentContainerNew>
