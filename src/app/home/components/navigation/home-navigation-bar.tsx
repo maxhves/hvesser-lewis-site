@@ -17,10 +17,11 @@ const navigationLinks = [
     label: 'Projects',
     href: '/#projects',
   },
-  {
-    label: 'Blog',
-    href: '/blog',
-  },
+  // TODO: Uncomment when the blog is ready.
+  // {
+  //   label: 'Blog',
+  //   href: '/blog',
+  // },
 ]
 
 //endregion

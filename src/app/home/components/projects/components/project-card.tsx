@@ -47,7 +47,7 @@ export default function ProjectCard({
 
       {/* Project Preview Image */}
       <GridOutline className="w-full md:w-3/5">
-        <div className="h-80 border border-stone-200 bg-white p-2 dark:border-stone-800 dark:bg-stone-900 md:h-full">
+        <div className="h-80 border border-stone-200 bg-stone-50 p-2 dark:border-stone-800 dark:bg-stone-900/50 md:h-full">
           <ImageTesting />
         </div>
       </GridOutline>
