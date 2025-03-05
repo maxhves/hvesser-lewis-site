@@ -24,7 +24,7 @@ const socialLinks = [
   },
   {
     label: 'Resume',
-    href: 'https://hvesserlewis.com/resume',
+    href: '/maxhves_cv.pdf',
     icon: IconClipboardText,
   },
 ]
