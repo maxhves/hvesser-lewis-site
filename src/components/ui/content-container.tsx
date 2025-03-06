@@ -46,5 +46,4 @@ export function ContentContainerNew({
   )
 }
 
-
 //TODO: Refactor old container with new
