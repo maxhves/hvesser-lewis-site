@@ -10,8 +10,8 @@ import GridOutline from '@/components/ui/grid-outline'
 
 export function Expertise() {
   return (
-    <section>
-      <ContentContainerNew className="pt-10 md:pt-16">
+    <section id="expertise">
+      <ContentContainerNew>
         <SectionHeading>You&apos;ll catch me doing a combo of these things</SectionHeading>
         <GridOutline className="my-10 flex flex-col gap-5 md:my-16 md:flex-row" direction="vertical">
           <CodeEditorCard sampleLabel="MobileDevelopment.kt">

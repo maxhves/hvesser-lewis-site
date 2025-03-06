@@ -5,7 +5,7 @@ import { projectData } from '@/app/home/components/projects/project-data'
 
 export default function Projects() {
   return (
-    <section>
+    <section id="projects">
       <ContentContainerNew>
         <SectionHeading>A number of projects have kept me busy recently</SectionHeading>
         <ol className="space-y-5 py-10 md:py-16">

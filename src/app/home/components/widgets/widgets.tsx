@@ -5,7 +5,7 @@ import GridOutline from '@/components/ui/grid-outline'
 
 export default function Widgets() {
   return (
-    <ContentContainerNew>
+    <ContentContainerNew className="pb-10 md:pb-16">
       <GridOutline className="flex flex-col gap-5 md:flex-row" direction="vertical">
         <CurrentLocationCard />
         <ThemeToggleCard />

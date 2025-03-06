@@ -46,7 +46,7 @@ export function CrimeConnoisseurPreviewImage() {
 
 function SingleImagePreview({ image }: { image: StaticImageData }) {
   return (
-    <div className="relative h-full w-full border border-stone-200 opacity-100 dark:border-stone-800 dark:opacity-90">
+    <div className="relative h-full w-full border border-stone-200 dark:border-stone-800">
       <Image className="object-cover object-top" src={image} alt="Product preview" fill={true} />
     </div>
   )
@@ -54,7 +54,7 @@ function SingleImagePreview({ image }: { image: StaticImageData }) {
 
 function DualImagePreview({ imageOne, imageTwo }: { imageOne: StaticImageData; imageTwo: StaticImageData }) {
   return (
-    <div className="relative h-full w-full border border-stone-200 opacity-100 dark:border-stone-800 dark:opacity-90">
+    <div className="relative h-full w-full border border-stone-200 dark:border-stone-800">
       <div className="absolute inset-y-0 left-0 top-0 h-full w-full">
         <Image className="object-cover object-top" src={imageOne} alt="Product preview" fill={true} />
       </div>
