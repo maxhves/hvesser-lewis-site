@@ -18,10 +18,12 @@ const styles = {
     'data-[disabled]:opacity-50',
 
     // Border
-    'border border-stone-200',
+    'border border-stone-200 dark:border-stone-800',
   ],
   solid: ['text-stone-800 bg-stone-100 hover:bg-stone-100/90 font-medium'],
-  plain: ['text-stone-800 bg-white hover:bg-white/90 font-medium'],
+  plain: [
+    'text-stone-800 dark:text-stone-300 bg-white dark:bg-stone-900 hover:bg-white/90 dark:hover:bg-stone-800/90 font-medium',
+  ],
   sizes: {
     large: ['px-3.5 py-2.5'],
     medium: ['px-4 py-1.5'],

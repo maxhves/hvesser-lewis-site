@@ -1,53 +1,37 @@
 import React from 'react'
-import ContentContainer from '@/components/ui/content-container'
-import { Button } from '@/components/ui/button'
+import { ContentContainerNew } from '@/components/ui/content-container'
+import GridOutline from '@/components/ui/grid-outline'
 import { clsx } from 'clsx'
 import { dmSans } from '@/app/fonts/fonts'
-import ArrowLeftLongIcon from '@/components/icon/arrow-left-long-icon'
+import { Button } from '@/components/ui/button'
 
 //region Main Component
 
 export default function NotFound() {
   return (
     <main className="flex-grow">
-      <ContentContainer className="h-full items-center justify-center">
-        <div className="w-full text-center">
-          <StatusLabel>404</StatusLabel>
-          <TitleLabel>This page does not exist</TitleLabel>
-          <DescriptionLabel>Sorry, the page you’re looking for couldn’t be found.</DescriptionLabel>
-          <GoBackHomeButton>Back to Home</GoBackHomeButton>
-        </div>
-      </ContentContainer>
+      <ContentContainerNew outerClassName="h-full" className="justify-center">
+        <GridOutline className="flex w-full justify-center" direction="vertical">
+          <GridOutline className="w-full max-w-sm py-6" direction="horizontal">
+            <h1
+              className={clsx(dmSans.className, 'text-center text-3xl font-medium text-stone-700 dark:text-stone-300')}
+            >
+              Page not found
+            </h1>
+            <p className="mt-4 text-center text-base font-normal text-stone-500">
+              Unfortunately, the page you’re looking for doesn’t appear to exist.
+            </p>
+            <GridOutline className="mt-6 flex justify-center">
+              <GridOutline className="w-fit" direction="horizontal">
+                <Button plain={true} size="large" href="/">
+                  Go back home
+                </Button>
+              </GridOutline>
+            </GridOutline>
+          </GridOutline>
+        </GridOutline>
+      </ContentContainerNew>
     </main>
-  )
-}
-
-//endregion
-
-//region Text Components
-
-function StatusLabel({ children }: { children: React.ReactNode }) {
-  return <span className="text-base font-semibold tracking-tight text-emerald-600">{children}</span>
-}
-
-function TitleLabel({ children }: { children: React.ReactNode }) {
-  return <h1 className={clsx(dmSans.className, 'mt-1 text-3xl font-semibold text-neutral-900')}>{children}</h1>
-}
-
-function DescriptionLabel({ children }: { children: React.ReactNode }) {
-  return <p className="mt-4 text-base leading-7 text-neutral-600">{children}</p>
-}
-
-//endregion
-
-//region Button Components
-
-function GoBackHomeButton({ children }: { children: React.ReactNode }) {
-  return (
-    <Button className="mt-8" href="/">
-      <ArrowLeftLongIcon />
-      {children}
-    </Button>
   )
 }
 
