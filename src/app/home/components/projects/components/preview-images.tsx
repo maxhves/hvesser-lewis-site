@@ -34,8 +34,10 @@ export function TemperatureCheckPreviewImage() {
 
 //region Crime Connoisseur
 
+import crimeConnoisseurDesktopPreview from '../../../../../../public/images/crime-connoisseur-preview-desktop.webp'
+
 export function CrimeConnoisseurPreviewImage() {
-  return <div>Hello again, hehe.</div>
+  return <SingleImagePreview image={crimeConnoisseurDesktopPreview} />
 }
 
 //endregion
