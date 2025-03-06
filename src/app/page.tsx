@@ -1,20 +1,15 @@
-import AboutSection from '@/app/home/components/about/about-section'
-import IntroductionSection from '@/app/home/components/introduction/introduction-section'
-import PortfolioSection from '@/app/home/components/portfolio/portfolio-section'
-import ContactSection from '@/app/home/components/contact/contact-section'
-import ServicesSection from '@/app/home/components/services/services-section'
-
-//region Entry
+import Introduction from '@/app/home/components/introduction/introduction'
+import { Expertise } from '@/app/home/components/expertise/expertise'
+import Projects from '@/app/home/components/projects/projects'
+import Widgets from '@/app/home/components/widgets/widgets'
 
 export default function Home() {
   return (
     <main className="flex-grow">
-      <IntroductionSection />
-      <AboutSection />
-      <ServicesSection />
-      <PortfolioSection />
+      <Introduction />
+      <Widgets />
+      <Expertise />
+      <Projects />
     </main>
   )
 }
-
-//endregion
