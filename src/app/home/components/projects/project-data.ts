@@ -1,5 +1,7 @@
 import {
+  CrimeConnoisseurPreviewImage,
   FindTheMenuPreviewImage,
+  TemperatureCheckPreviewImage,
   VisaMatchPreviewImage,
 } from '@/app/home/components/projects/components/preview-images'
 
@@ -26,7 +28,7 @@ export const projectData = [
     description:
       'Designed as part of a suite of health tools, this particular tool is designed for individuals who want to better understand their body temperature and identify readings that may fall outside the normal range or indicate a fever.\n\nSimply enter a temperature reading, and the tool will analyze it, providing insight into what it could mean for your health.',
     href: 'https://temperature-check.com',
-    imagePreview: FindTheMenuPreviewImage,
+    imagePreview: TemperatureCheckPreviewImage,
   },
   {
     id: 4,
@@ -34,6 +36,6 @@ export const projectData = [
     description:
       'A true crime podcast discovery platform designed to help users easily find and stream the latest true crime content.\n\nThe directory features powerful filtering options and prioritizes the most up-to-date shows and episodes, making content discovery effortless. Episodes can be streamed directly on the platform, providing a seamless listening experience without the need to leave the site.',
     href: 'https://crimeconnoisseur.com',
-    imagePreview: FindTheMenuPreviewImage,
+    imagePreview: CrimeConnoisseurPreviewImage,
   },
 ]

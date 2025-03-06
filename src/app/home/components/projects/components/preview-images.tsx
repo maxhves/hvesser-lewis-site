@@ -21,6 +21,25 @@ export function VisaMatchPreviewImage() {
 
 //endregion
 
+//region Temperature Check
+
+import temperatureCheckDesktopPreview from '../../../../../../public/images/temperature-check-preview-desktop.webp'
+import temperatureCheckMobilePreview from '../../../../../../public/images/temperature-check-preview-mobile.webp'
+
+export function TemperatureCheckPreviewImage() {
+  return <DualImagePreview imageOne={temperatureCheckDesktopPreview} imageTwo={temperatureCheckMobilePreview} />
+}
+
+//endregion
+
+//region Crime Connoisseur
+
+export function CrimeConnoisseurPreviewImage() {
+  return <div>Hello again, hehe.</div>
+}
+
+//endregion
+
 //region Common
 
 function SingleImagePreview({ image }: { image: StaticImageData }) {
@@ -37,7 +56,7 @@ function DualImagePreview({ imageOne, imageTwo }: { imageOne: StaticImageData; i
       <div className="absolute inset-y-0 left-0 top-0 h-full w-full">
         <Image className="object-cover object-top" src={imageOne} alt="Product preview" fill={true} />
       </div>
-      <div className="absolute inset-y-0 right-0 top-0 h-full w-72 border-s border-stone-200">
+      <div className="absolute inset-y-0 right-0 top-0 h-full w-1/2 border-s border-stone-200 md:w-72">
         <Image className="object-cover object-top" src={imageTwo} alt="Product preview" fill={true} />
       </div>
     </div>
