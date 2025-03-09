@@ -1,4 +1,4 @@
-### Hvesser-Lewis Portfolio
+# Hvesser-Lewis Portfolio
 
 This repository is the frontend code for my personal portfolio website. The site is hosted at [hvesserlewis.com](https://hvesserlewis.com).
 
