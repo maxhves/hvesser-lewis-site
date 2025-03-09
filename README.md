@@ -1,14 +1,11 @@
-### Hvesser-Lewis Consulting
+### Hvesser-Lewis Portfolio
 
-This repository hosts the front-end code for the website [hvesserlewis.com](https://www.hvesserlewis.com).
+This repository is the frontend code for my personal portfolio website. The site is hosted at [hvesserlewis.com](https://hvesserlewis.com).
 
-This website is used to promote my personal consultation services, and this repository specifically is kept an as open source project as to proivde a sample to those looking to make a similar website.
+I plan to keep this code as an open-source project, for others to look at and use as a template for their own porfolio sites if they find it interesting.
 
-### Tech Stack
+The site is still in development, namely the blog is still not functional in the latest version.
 
-The project has a fairly standard setup utilizing `NextJS` with `Typescript` and `TailwindCSS` for simplified styling. As the site grows in features, I will update this section with more information about the implementation, but for now there exists a minimal number of pages and complexity.
+## Tech Stack
 
-
-#### Please note
-
-Take a look at the code/site, perhaps as inspiration for your own site, feel free to use it as an example, but with any code directly taken, attribution is greatly appreciated.
+Built with `Next.js` using `TypeScript` and `TailwindCSS`. It follows a conventional structure and application architecture.
