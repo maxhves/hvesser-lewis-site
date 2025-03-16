@@ -29,8 +29,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 //region Metadata
 
 export const metadata: Metadata = {
-  title: 'Maximilian Hvesser-Lewis | Full Stack & Mobile App Developer',
-  description: 'Full Stack, and Mobile App Developer based in Oslo, Norway',
+  title: 'Maximilian Hvesser-Lewis | Full Stack & Mobile App Engineer',
+  description: 'Full Stack, and Mobile App Engineer based in London, United Kingdom',
 }
 
 //endregion
