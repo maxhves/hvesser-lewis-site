@@ -12,8 +12,8 @@ import GridOutline from '@/components/ui/grid-outline'
 
 const STYLE_LIGHT: string = 'streets-v12'
 const STYLE_DARK: string = 'dark-v11'
-const LATITUDE: number = 10.757035
-const LONGITUDE: number = 59.908057
+const LATITUDE: number = -0.1
+const LONGITUDE: number = 51.505
 const ZOOM: number = 12
 const BEARING: number = 0
 const WIDTH: number = 1000
