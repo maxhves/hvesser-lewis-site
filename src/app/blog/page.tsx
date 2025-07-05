@@ -10,6 +10,7 @@ import ArticleCard, {
 } from '@/app/blog/components/article-card'
 import { PageDescription } from '@/components/ui/header'
 import ImageBanner from '@/components/ui/image-banner'
+import { notFound } from 'next/navigation';
 
 import bangkokStreetImage from '../../../public/images/blog/bangkok-street.webp'
 import sculptureSkyImage from '../../../public/images/blog/sculpture-sky.webp'
@@ -17,6 +18,9 @@ import sculptureSkyImage from '../../../public/images/blog/sculpture-sky.webp'
 //region Entry
 
 export default function Blog() {
+
+  return notFound()
+
   return (
     <main className="flex-grow">
       <ImageBanner image={sculptureSkyImage}>Beyond Code: Hvesser-Lewis Insights</ImageBanner>

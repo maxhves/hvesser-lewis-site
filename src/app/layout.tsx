@@ -16,9 +16,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         className={clsx(manrope.className, 'flex h-dvh flex-col bg-stone-100 antialiased dark:bg-stone-950')}
       >
         <ThemeProvider attribute="class" enableSystem={false}>
-          <HomeNavigationBar />
+          {/*<HomeNavigationBar />*/}
           {children}
-          <Footer />
+          {/*<Footer />*/}
         </ThemeProvider>
         <Analytics />
       </body>
