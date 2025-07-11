@@ -26,6 +26,7 @@ import FinalCommentsSection, {
   FinalCommentsHeading,
   FinalCommentsLink,
 } from '@/app/blog/thailand-how-to-extend-a-tourist-visa-by-30-days/components/final-comments-section'
+import { notFound } from 'next/navigation';
 import ArticleImageBanner from '@/app/blog/thailand-how-to-extend-a-tourist-visa-by-30-days/components/article-image-banner'
 
 import bangkokStreetImage from '../../../../public/images/blog/bangkok-street.webp'
@@ -91,6 +92,8 @@ const processSteps = [
 //region Entry
 
 export default function ThailandHowToExtendATouristVisaBy30Days() {
+  return notFound()
+
   return (
     <main className="flex-grow">
       <article>
